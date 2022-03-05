@@ -1,0 +1,23 @@
+{
+  "Troll": {
+    "hp": 100,
+    "defense": 20,
+    "attack": 10,
+    "threats": {
+      "0": "I will destroy you.. or even worse.. dont know... ",
+      "1": "<terrific quotes>"
+    },
+    "apologies": {
+      "0": "sorry.. or something",
+      "1": "<sad noises only>"
+    },
+    "dead_quotes": {
+      "0": "ugh",
+      "1": "another ugh"
+    },
+    "victorious_quotes": {
+      "0": "yeee",
+      "1": "sheeesh"
+    }
+  }
+}
