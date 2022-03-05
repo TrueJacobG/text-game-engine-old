@@ -1,5 +1,12 @@
 ### Java-TextGameEngine
-####Text Game Engine - game UI + 'create your own story' UI
+#### Text Game Platform = Story Creator Tools + Game UI
+#### Create your your own story and share it with others!
+
+---
+
+#### Start of the project: 2022.03.05
+#### Version: pre-Beta
+#### State: not playable :D
 
 ---
 
