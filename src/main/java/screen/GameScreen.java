@@ -1,33 +1,37 @@
 package screen;
 
-import screen.components.Equipment;
-import screen.components.Item;
-import screen.constants.Size;
-
+import screen.components.*;
 import javax.swing.*;
 import java.awt.*;
 
-public class GameScreen {
+public class GameScreen extends JFrame{
     public GameScreen(){
-        JFrame screen = new JFrame("Game Window - work in progress");
-        screen.setLayout(null);
+        this.setTitle("Game Window - work in progress");
 
-        screen.getContentPane().setBackground(Color.WHITE);
+        this.setBackground(Color.WHITE);
+        this.setIconImage(new ImageIcon("images/logo.png").getImage());
 
-        screen.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        screen.setResizable(false);
-        ImageIcon image = new ImageIcon("images/logo.png");
-        screen.setIconImage(image.getImage());
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setResizable(false);
 
-        screen.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        screen.setVisible(true);
+        this.setLayout(new GridLayout(1, 3));
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
-        screen.add(new Item("Helmet").getBox(Size.max_window_width - Size.box_size - 250, 20));
-        screen.add(new Item("Chestplate").getBox(Size.max_window_width - Size.box_size - 250, 270));
-        screen.add(new Item("Weapon").getBox(Size.max_window_width - Size.box_size - 50, 270));
-        screen.add(new Item("Shield").getBox(Size.max_window_width - Size.box_size - 450, 270));
-        screen.add(new Item("Pants").getBox(Size.max_window_width - Size.box_size - 250, 470));
-        screen.add(new Item("Boots").getBox(Size.max_window_width - Size.box_size - 250, 670));
+        JPanel leftPanel = new JPanel();
+        JPanel centerPanel = new JPanel();
+        JPanel rightPanel = new JPanel();
+        rightPanel.setLayout(new GridLayout(3, 1));
 
+        this.add(leftPanel);
+        this.add(centerPanel);
+
+        rightPanel.add(new ArmorStandPanel());
+        rightPanel.add(new EquipmentPanel());
+        //rightPanel.add(new SpellsPanel());
+
+
+        this.add(rightPanel);
+
+        this.setVisible(true);
     }
 }

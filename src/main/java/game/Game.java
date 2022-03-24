@@ -2,8 +2,10 @@ package game;
 
 import screen.GameScreen;
 
+import javax.swing.*;
+
 public class Game {
     public static void run(){
-        GameScreen gameScreen = new GameScreen();
+        JFrame gameScreen = new GameScreen();
     }
 }

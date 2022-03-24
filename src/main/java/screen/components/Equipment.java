@@ -14,4 +14,5 @@ public class Equipment {
     public static List<Item> getEq(){
         return eq;
     }
+
 }
