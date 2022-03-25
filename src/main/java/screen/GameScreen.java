@@ -1,6 +1,8 @@
 package screen;
 
-import screen.components.*;
+import screen.panels.ArmorStandPanel;
+import screen.panels.EquipmentPanel;
+
 import javax.swing.*;
 import java.awt.*;
 
