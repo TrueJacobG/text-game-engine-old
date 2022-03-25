@@ -1,4 +1,4 @@
-package screen.components;
+package game.components;
 
 import screen.constants.Size;
 
@@ -11,10 +11,17 @@ import java.awt.event.ActionListener;
 public class Item extends JButton implements ActionListener {
     private String id;
     private String name;
+    private String durability;
+    private String type;
+    private String info;
 
-    public Item(String id){
+
+    public Item(String id, String name, String durability, String type, String info){
         this.id = id;
-        this.name = id;
+        this.name = name;
+        this.durability = durability;
+        this.type = type;
+        this.info = info;
         // from id get name etc
 
         this.setText(this.name);
@@ -45,8 +52,6 @@ public class Item extends JButton implements ActionListener {
         this.setBorder(border);
 
         this.addActionListener(this);
-
-        Equipment.add(this);
     }
 
     public String toString(){
