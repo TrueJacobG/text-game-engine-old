@@ -1,4 +1,4 @@
-package screen.components;
+package screen.panels;
 
 import javax.swing.*;
 
