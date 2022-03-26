@@ -7,11 +7,25 @@
       "type": "armors",
       "info": "Cool item - (testing)"
     },
+    "sword": {
+      "id": "5",
+      "name": "Swordd",
+      "durability": "100",
+      "type": "weapons",
+      "info": "Cool item - (testing)"
+    },
     "chestplate": {
       "id": "2",
       "name": "Chestplatto",
       "durability": "100",
       "type": "armors",
+      "info": "Cool item - (testing)"
+    },
+    "shield": {
+      "id": "6",
+      "name": "Shieldd",
+      "durability": "100",
+      "type": "defense_weapons",
       "info": "Cool item - (testing)"
     },
     "pants": {
@@ -26,20 +40,6 @@
       "name": "Bootts",
       "durability": "100",
       "type": "armors",
-      "info": "Cool item - (testing)"
-    },
-    "sword": {
-      "id": "5",
-      "name": "Swordd",
-      "durability": "100",
-      "type": "weapons",
-      "info": "Cool item - (testing)"
-    },
-    "shield": {
-      "id": "6",
-      "name": "Shieldd",
-      "durability": "100",
-      "type": "defense_weapons",
       "info": "Cool item - (testing)"
     }
   },

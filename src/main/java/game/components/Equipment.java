@@ -2,10 +2,7 @@ package game.components;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import com.google.gson.Gson;
 import database.logs.MyLogger;
@@ -13,18 +10,18 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 
 public class Equipment {
 
-    public static List<Item> allEqItems = new ArrayList<>();
-    public static HashSet<String> indexesOfItems = new HashSet<>();
+    private static List<Item> allEqItems = new ArrayList<>();
+    private static HashSet<String> indexesOfItems = new HashSet<>();
 
-    public static List<Item> onYou = new ArrayList<>();
-    public static List<Item> armors = new ArrayList<>();
-    public static List<Item> weapons = new ArrayList<>();
-    public static List<Item> defenseWeapons = new ArrayList<>();
-    public static List<Item> keyItems = new ArrayList<>();
-    public static List<Item> other = new ArrayList<>();
+    private static Map<String, Item> onYou = new HashMap<>();
+    private static Map<String, Item> armors = new HashMap<>();
+    private static Map<String, Item> weapons = new HashMap<>();
+    private static Map<String, Item> defenseWeapons = new HashMap<>();
+    private static Map<String, Item> keyItems = new HashMap<>();
+    private static Map<String, Item> other = new HashMap<>();
 
     public static void init(){
-        Map<String, Map<String, Map<String, String>>> map = null;
+        Map<String, Map<String, Map<String, String>>> map;
         try {
             map = new Gson().fromJson(
                     new FileReader("src/main/java/database/character/equipment.json"),
@@ -44,25 +41,13 @@ public class Equipment {
 
                 Item item = new Item(properties.get(0), properties.get(1), properties.get(2), properties.get(3), properties.get(4));
 
-                switch(category){
-                    case "onYou":
-                        onYou.add(item);
-                        break;
-                    case "armors":
-                        armors.add(item);
-                        break;
-                    case "weapons":
-                        weapons.add(item);
-                        break;
-                    case "defenseWeapons":
-                        defenseWeapons.add(item);
-                        break;
-                    case "keyItems":
-                        keyItems.add(item);
-                        break;
-                    case "other":
-                        other.add(item);
-                        break;
+                switch (category) {
+                    case "onYou" -> onYou.put(primitiveName, item);
+                    case "armors" -> armors.put(primitiveName, item);
+                    case "weapons" -> weapons.put(primitiveName, item);
+                    case "defenseWeapons" -> defenseWeapons.put(primitiveName, item);
+                    case "keyItems" -> keyItems.put(primitiveName, item);
+                    case "other" -> other.put(primitiveName, item);
                 }
 
                 if(!(indexesOfItems.contains(properties.get(0)))){
@@ -75,15 +60,15 @@ public class Equipment {
 
     }
 
-    public static void addItem(Item item){
+    public static void addItemToList(Item item){
         allEqItems.add(item);
     }
 
-    public static List<Item> getEq(){
+    public static List<Item> getAllEq(){
         return allEqItems;
     }
 
-    public static List<Item> getOnYou(){
+    public static Map<String, Item> getOnYou(){
         return onYou;
     }
 
