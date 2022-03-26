@@ -1,10 +1,12 @@
 package screen;
 
-import screen.panels.ArmorStandPanel;
-import screen.panels.EquipmentPanel;
+import game.components.Equipment;
+import game.components.Item;
+import screen.panels.*;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Map;
 
 public class GameScreen extends JFrame{
     public GameScreen(){
@@ -22,15 +24,20 @@ public class GameScreen extends JFrame{
         JPanel leftPanel = new JPanel();
         JPanel centerPanel = new JPanel();
         JPanel rightPanel = new JPanel();
-        rightPanel.setLayout(new GridLayout(3, 1));
 
         this.add(leftPanel);
         this.add(centerPanel);
 
+        leftPanel.setBackground(Color.YELLOW);
+        centerPanel.setBackground(Color.LIGHT_GRAY);
+        rightPanel.setBackground(Color.PINK);
+
+        rightPanel.setLayout(new GridLayout(3, 1));
+
+
         rightPanel.add(new ArmorStandPanel());
         rightPanel.add(new EquipmentPanel());
-        //rightPanel.add(new SpellsPanel());
-
+        rightPanel.add(new SpellsPanel());
 
         this.add(rightPanel);
 
