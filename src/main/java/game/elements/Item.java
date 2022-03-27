@@ -1,4 +1,4 @@
-package game.components;
+package game.elements;
 
 public class Item{
     private String id;

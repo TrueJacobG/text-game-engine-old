@@ -1,6 +1,6 @@
 package screen.buttons;
 
-import game.components.Item;
+import game.elements.Item;
 import screen.constants.Size;
 
 import javax.swing.*;
