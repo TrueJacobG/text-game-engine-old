@@ -1,7 +1,7 @@
 package screen.buttons;
 
 import game.elements.Item;
-import screen.constants.Size;
+import game.constants.Size;
 
 import javax.swing.*;
 import javax.swing.border.Border;
