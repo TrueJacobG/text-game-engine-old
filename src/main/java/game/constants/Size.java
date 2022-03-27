@@ -1,4 +1,4 @@
-package screen.constants;
+package game.constants;
 
 public class Size {
     public static int boxWidth = 140;
