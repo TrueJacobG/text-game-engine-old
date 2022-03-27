@@ -1,4 +1,8 @@
 {
+  "name": "John",
+  "surname": "Smith",
+  "age": 28,
+  "alive": true,
   "strength": 78,
   "speed": 20,
   "hp": 100,
