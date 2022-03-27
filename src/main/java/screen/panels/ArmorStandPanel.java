@@ -1,7 +1,7 @@
 package screen.panels;
 
 import game.components.Equipment;
-import game.components.Item;
+import game.elements.Item;
 import screen.buttons.ItemButton;
 
 import javax.swing.*;

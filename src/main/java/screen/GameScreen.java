@@ -1,12 +1,9 @@
 package screen;
 
-import game.components.Equipment;
-import game.components.Item;
 import screen.panels.*;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Map;
 
 public class GameScreen extends JFrame{
     public GameScreen(){
