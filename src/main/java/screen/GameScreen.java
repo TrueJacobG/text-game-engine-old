@@ -2,8 +2,10 @@ package screen;
 
 import screen.panels.*;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import java.awt.Color;
+import java.awt.GridLayout;
 
 public class GameScreen extends JFrame{
     public GameScreen(){
@@ -14,29 +16,13 @@ public class GameScreen extends JFrame{
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
-
-        this.setLayout(new GridLayout(1, 3));
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
-        JPanel leftPanel = new JPanel();
-        JPanel centerPanel = new JPanel();
-        JPanel rightPanel = new JPanel();
+        this.setLayout(new GridLayout(1, 3));
 
-        this.add(leftPanel);
-        this.add(centerPanel);
-
-        leftPanel.setBackground(Color.YELLOW);
-        centerPanel.setBackground(Color.LIGHT_GRAY);
-        rightPanel.setBackground(Color.PINK);
-
-        rightPanel.setLayout(new GridLayout(3, 1));
-
-
-        rightPanel.add(new ArmorStandPanel());
-        rightPanel.add(new EquipmentPanel());
-        rightPanel.add(new SpellsPanel());
-
-        this.add(rightPanel);
+        this.add(new LeftPanel());
+        this.add(new CenterPanel());
+        this.add(new RightPanel());
 
         this.setVisible(true);
     }
