@@ -1,0 +1,14 @@
+{
+  "teleport": {
+    "cost": "25",
+    "other": null
+  },
+  "heal": {
+    "cost": "25",
+    "other": null
+  },
+  "coin filp": {
+    "cost": "25",
+    "other": null
+  }
+}
