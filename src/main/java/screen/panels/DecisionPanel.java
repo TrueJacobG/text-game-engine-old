@@ -16,15 +16,15 @@ public class DecisionPanel extends JPanel {
         JPanel p3 = new JPanel();
         JPanel p4 = new JPanel();
 
-        p1.setLayout(new GridLayout(1,1));
-        p2.setLayout(new GridLayout(1,1));
-        p3.setLayout(new GridLayout(1,1));
-        p4.setLayout(new GridLayout(1,1));
-
         p1.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         p2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         p3.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         p4.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        p1.setLayout(new GridBagLayout());
+        p2.setLayout(new GridBagLayout());
+        p3.setLayout(new GridBagLayout());
+        p4.setLayout(new GridBagLayout());
 
         p1.add(new DecisionButton("hello"));
         p2.add(new DecisionButton("test"));

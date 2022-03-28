@@ -1,7 +1,9 @@
 package screen.buttons;
 
+import game.constants.Size;
 import screen.panels.EqOptionPanel;
 import screen.panels.StoryPanel;
+import screen.style.RoundedBorder;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,9 +19,14 @@ public class DecisionButton extends JButton implements ActionListener {
 
     public DecisionButton(String text){
         this.text = text;
-        this.setFocusable(false);
-        this.addActionListener(this);
         this.setText(this.text);
+
+        this.setFocusable(false);
+        this.setBorder(new RoundedBorder(Size.decisionButtonRadius));
+        this.setPreferredSize(new Dimension(90, 50));
+        this.setSize(new Dimension(90, 50));
+        this.addActionListener(this);
+
     }
 
     public static void addPanels(EqOptionPanel eq, StoryPanel story){
