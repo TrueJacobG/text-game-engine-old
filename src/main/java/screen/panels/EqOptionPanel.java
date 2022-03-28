@@ -3,17 +3,17 @@ package screen.panels;
 import javax.swing.*;
 import java.awt.*;
 
-public class StoryPanel extends JPanel {
+public class EqOptionPanel extends JPanel {
 
-    private String text = "story intro";
+    private String text = "eq intro";
     private JLabel label = new JLabel();
 
-    public StoryPanel(){
+    public EqOptionPanel(){
         this.setBackground(Color.MAGENTA);
         this.add(label);
     }
 
     public void changeText(String text) {
-        label.setText("Story" + text);
+        label.setText("eq here " + text);
     }
 }

@@ -2,6 +2,8 @@ package screen.buttons;
 
 import game.elements.Item;
 import game.constants.Size;
+import screen.panels.EqOptionPanel;
+import screen.panels.StoryPanel;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -12,6 +14,8 @@ import java.awt.event.ActionListener;
 public class ItemButton extends JButton implements ActionListener{
 
     private Item item;
+    public static EqOptionPanel eqOptionPanel;
+    public static StoryPanel storyPanel;
 
     public ItemButton(Item item){
         this.item = item;
@@ -39,10 +43,21 @@ public class ItemButton extends JButton implements ActionListener{
         this.addActionListener(this);
     }
 
+    public static void addPanels(EqOptionPanel eq, StoryPanel story){
+        eqOptionPanel = eq;
+        storyPanel = story;
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == this) {
+
+            eqOptionPanel.setVisible(true);
+            storyPanel.setVisible(false);
+
             System.out.println(this.item.getName());
+
+            eqOptionPanel.setBackground(Color.BLACK);
         }
     }
 }

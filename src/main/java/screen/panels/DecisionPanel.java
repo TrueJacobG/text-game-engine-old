@@ -7,10 +7,7 @@ import java.awt.*;
 
 public class DecisionPanel extends JPanel {
 
-    private StoryPanel panel;
-
-    DecisionPanel(StoryPanel panel){
-        this.panel = panel;
+    DecisionPanel(){
         this.setBackground(Color.CYAN);
         this.setLayout(new GridLayout(2,2));
 
@@ -29,10 +26,10 @@ public class DecisionPanel extends JPanel {
         p3.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         p4.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        p1.add(new DecisionButton("hello", panel));
-        p2.add(new DecisionButton("test",panel));
-        p3.add(new DecisionButton("ttt",panel));
-        p4.add(new DecisionButton("world",panel));
+        p1.add(new DecisionButton("hello"));
+        p2.add(new DecisionButton("test"));
+        p3.add(new DecisionButton("ttt"));
+        p4.add(new DecisionButton("world"));
 
         this.add(p1);
         this.add(p2);

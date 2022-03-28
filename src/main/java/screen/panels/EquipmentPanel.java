@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class EquipmentPanel extends JPanel {
+
     public EquipmentPanel(){
         this.setLayout(new FlowLayout());
 
@@ -20,10 +21,5 @@ public class EquipmentPanel extends JPanel {
         for(Item i : Equipment.getAllEq()){
             this.add(new ItemButton(i));
         }
-    }
-
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
     }
 }
