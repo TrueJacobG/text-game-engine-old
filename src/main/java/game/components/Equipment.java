@@ -69,6 +69,10 @@ public class Equipment {
         return allEqItems;
     }
 
+    public static int getNumberOfEqItems(){
+        return allEqItems.size();
+    }
+
     public static Map<String, Item> getOnYou(){
         return onYou;
     }

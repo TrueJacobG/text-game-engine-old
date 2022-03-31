@@ -7,6 +7,10 @@ public class Item{
     private String type;
     private String info;
 
+    // empty eq box
+    public Item(){
+        this.name = "";
+    }
 
     public Item(String id, String name, String durability, String type, String info){
         this.id = id;
@@ -24,5 +28,8 @@ public class Item{
         return this.name;
     }
 
+    public boolean isItem(){
+        return ! name.equals("");
+    }
 
 }

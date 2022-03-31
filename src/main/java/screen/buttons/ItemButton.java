@@ -22,18 +22,15 @@ public class ItemButton extends JButton implements ActionListener{
 
         this.setFocusable(false);
         this.setText(item.getName());
+        this.setFont(new Font("Arial", Font.PLAIN,20));
+
 
         this.setHorizontalTextPosition(JButton.CENTER);
         this.setVerticalTextPosition(JButton.TOP);
-
-        this.setOpaque(true);
-
-        this.setFont(new Font("Arial", Font.PLAIN,20));
-
         this.setVerticalAlignment(JButton.CENTER);
         this.setHorizontalAlignment(JButton.CENTER);
-        this.setPreferredSize(new Dimension(Size.boxWidth, Size.boxHeight));
 
+        this.setOpaque(true);
         this.setForeground(Color.BLACK);
         this.setBackground(Color.WHITE);
 
@@ -50,7 +47,7 @@ public class ItemButton extends JButton implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == this) {
+        if (e.getSource() == this && item.isItem()) {
 
             eqOptionPanel.setVisible(true);
             storyPanel.setVisible(false);

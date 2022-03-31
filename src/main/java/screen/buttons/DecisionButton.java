@@ -23,8 +23,8 @@ public class DecisionButton extends JButton implements ActionListener {
 
         this.setFocusable(false);
         this.setBorder(new RoundedBorder(Size.decisionButtonRadius));
-        this.setPreferredSize(new Dimension(90, 50));
-        this.setSize(new Dimension(90, 50));
+        this.setPreferredSize(new Dimension(Size.decisionButtonWidth, Size.decisionButtonHeight));
+        this.setSize(new Dimension(Size.decisionButtonWidth, Size.decisionButtonHeight));
         this.addActionListener(this);
 
     }

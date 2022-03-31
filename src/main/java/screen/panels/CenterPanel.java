@@ -12,7 +12,7 @@ public class CenterPanel extends JPanel {
         this.setLayout(new BorderLayout());
 
         JSplitPane sp = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
-        sp.setResizeWeight(0.7);
+        sp.setResizeWeight(0.85);
         sp.setEnabled(false);
         sp.setDividerSize(0);
 
