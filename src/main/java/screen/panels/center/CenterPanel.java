@@ -1,4 +1,4 @@
-package screen.panels;
+package screen.panels.center;
 
 import screen.buttons.DecisionButton;
 import screen.buttons.ItemButton;

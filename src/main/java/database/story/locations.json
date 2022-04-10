@@ -1,9 +1,31 @@
 {
-  "Marry Land - fight": {
-    "text": "<fabulous story>",
-    "enemy": "Troll"
+  "Mary Land": {
+
+    "neighbors": {
+      "Loundrytary":  "2"
+    },
+
+    "main": {
+      "story": "<deep story here>"
+    },
+    "fight": {
+      "battle": "true",
+      "text": "<fabulous story>",
+      "enemy": "Troll"
+    },
+    "shop": {
+      "text": "<text here>"
+    },
+    "other": {
+      "text": "<text here>"
+    }
   },
-  "Marry Land": "<deep story here>",
-  "Marry Land - shop": "<shop text>",
-  "Marry Land - smith": "<blacksmith text>"
+
+  "Loundrytary": {
+
+    "neighbors": {
+      "Mary Land": "7"
+    }
+  }
+
 }

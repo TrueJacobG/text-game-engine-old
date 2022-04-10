@@ -1,8 +1,8 @@
 package screen.buttons;
 
 import game.constants.Size;
-import screen.panels.EqOptionPanel;
-import screen.panels.StoryPanel;
+import screen.panels.center.EqOptionPanel;
+import screen.panels.center.StoryPanel;
 import screen.style.RoundedBorder;
 
 import javax.swing.*;

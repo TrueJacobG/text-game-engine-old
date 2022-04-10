@@ -1,4 +1,4 @@
-package screen.panels;
+package screen.panels.center;
 
 import javax.swing.*;
 import java.awt.*;

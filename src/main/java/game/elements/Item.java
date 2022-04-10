@@ -7,7 +7,6 @@ public class Item{
     private String type;
     private String info;
 
-    // empty eq box
     public Item(){
         this.name = "";
     }

@@ -1,4 +1,4 @@
-package screen.panels;
+package screen.panels.right;
 
 import game.elements.Spell;
 import game.components.Spells;

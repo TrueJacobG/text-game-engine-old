@@ -1,4 +1,4 @@
-package screen.panels;
+package screen.panels.right;
 
 import game.components.Equipment;
 import game.constants.Size;

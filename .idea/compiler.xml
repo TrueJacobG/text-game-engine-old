@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TextGameEngine" />
         <module name="JAVA-TextGameEngine" />
+        <module name="Java-TextGameEngine" />
       </profile>
     </annotationProcessing>
   </component>

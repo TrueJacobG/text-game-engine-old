@@ -1,7 +1,8 @@
 package screen;
 
-import screen.buttons.ItemButton;
-import screen.panels.*;
+import screen.panels.center.CenterPanel;
+import screen.panels.left.LeftPanel;
+import screen.panels.right.RightPanel;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
