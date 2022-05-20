@@ -10,7 +10,7 @@
 
 ---
 
-##### Java version of my old project : [Link][Link]
-##### with some new features...
+##### Based on my old python project: [URL][link]
+##### but UI based
 
-[Link]: https://github.com/TrueJacobG/Text-Adventure-Game-Engine
+[link]: https://github.com/TrueJacobG/Text-Adventure-Game-Engine
