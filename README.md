@@ -4,9 +4,7 @@
 
 ---
 
-#### Start of the project: 2022.03.05
-#### Version: pre-Beta
-#### State: not playable :D
+#### State: Unfinished
 
 ---
 
